@@ -16,7 +16,9 @@
 
         <div class="form-group">
 
-          <div class="form-label">
+          <div class="form-label"
+          
+               *ngIf="query">
             
             For:
 
@@ -59,7 +61,7 @@
               
              *ngFor="let artist of artists"
             
-             (click)="showArtist($event, artist)">
+             (click)="showArtist(artist)">
 
               <div class="media">
 

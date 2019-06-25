@@ -91,13 +91,10 @@ export class AppComponent {
 
   }
 
-  showArtist(e, artist) {
-
-
-    console.log(e);
+  showArtist(artist) {
 
     this.query = artist.name;
-    
+
 
   }
 
