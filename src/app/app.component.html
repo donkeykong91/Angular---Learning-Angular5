@@ -55,13 +55,17 @@
 
           <a href="#" 
           
-              class="list-group-item list-group-item-action flex-column align-items-start">
+            class="list-group-item list-group-item-action flex-column align-items-start"
+              
+            *ngfor="let artist of artists">
 
               <div class="media">
 
                 <div class="media-body align-self-center">
 
-                  <h5 class="m-0"></h5>
+                  <h5 class="m-0">{{ artist.name }}</h5>
+
+                  {{ artist.reknown }}
 
                 </div><!-- media body -->
 
