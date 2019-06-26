@@ -93,7 +93,10 @@ export class AppComponent {
 
   showArtist(artist) {
 
+
     this.query = artist.name;
+
+    artist.highlight = !artist.highlight;
 
 
   }

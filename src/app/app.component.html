@@ -61,7 +61,9 @@
               
              *ngFor="let artist of artists"
             
-             (click)="showArtist(artist)">
+             (click)="showArtist(artist)"
+             
+             [style.backgroundColor]="artist.highlight ? '#EEE' : '#FFF'">
 
               <div class="media">
 
