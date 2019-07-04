@@ -19,6 +19,21 @@ export class AppComponent implements OnInit{
 
   artists: object;
 
+  currentArtist: object;
+
+
+  showArtist(artist) {
+
+
+    this.query = artist.name;
+
+    artist.highlight = !artist.highlight;
+
+    this.currentArtist = artist;
+
+
+  }
+
 
   constructor(private http: HttpClient) {
 
@@ -40,17 +55,6 @@ export class AppComponent implements OnInit{
         }
         
       );
-
-  }
-
-
-  showArtist(artist) {
-
-
-    this.query = artist.name;
-
-    artist.highlight = !artist.highlight;
-
 
   }
 
