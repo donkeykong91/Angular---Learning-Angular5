@@ -61,7 +61,7 @@
           
              class="list-group-item list-group-item-action flex-column align-items-start"
               
-             *ngFor="let artist of artists"
+             *ngFor="let artist of (artists | searchArtists: query)"
             
              (click)="showArtist(artist)"
              
