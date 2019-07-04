@@ -3,10 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component(
   
             {
-              
+
               selector: 'app-artist-details',
 
-              templateUrl: './artist-details.component.html'
+              templateUrl: './artist-details.component.html',
+
+              inputs: ['artist']
 
             }
             
